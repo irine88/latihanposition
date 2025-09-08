@@ -5,12 +5,16 @@
 }
 
 body{
-    border: 3px solid;
-    border-color: black;
-    /* width: 600px;
-    height: 2000px; */
+    /* border: 3px solid;
+    border-color: black; */
     width: 100%;
-    margin: 0 auto;
+    height: 100%;
+}
+
+.container{
+    text-align: center;
+    overflow: hidden;
+    margin-top: 0;
 }
 
 .atas1{
@@ -19,13 +23,15 @@ body{
     width: 100%;
     height: 50px;
     position: fixed;
+    margin: 0px;
+    z-index: 9;
 }
 
 .atas1 ul li{
     display: inline-block;
     padding: 15px;
     font-family: 'Courier New';
-    justify-content: center;
+    font-weight: bold;
 }
 
 .atas2{
@@ -41,8 +47,39 @@ body{
 .atas3{
     font-family: 'Courier New';
     width: 100%;
-    position: relative;
-    top: 20px;
-    left: 20px;
-    right: 20px;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.kiri{
+    background: red;
+    color: white;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin: 15px;
+}
+
+.tengah{
+    background: purple;
+    color: white;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin: 15px;
+}
+
+.kanan{
+    background: blue;
+    color: white;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin: 15px;
 }
